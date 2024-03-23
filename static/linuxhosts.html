@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Setup Guides</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OST Server Setup Guides</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://codetestgroup.github.io/opensource-tools-setup">Home</a></li>
+            <li><a href="windowshosts.html">Windows Hosts</a></li>
+            <li><a href="linuxhosts.html">Linux/Raspberry Pi Hosts</a></li>
+            <!-- Add more guide types as needed -->
+        </ul>
+    </nav>
+    <h2>Linux/Raspberry PI:</h2>
+    <h3>Apache 2:</h3>
+      <b>Step 1:</b>
+        <p>On your terminal install Apache webserver host with this command:</p>
+        <p>sudo apt-get install apache2</p>
+      <b>Step 2:</b>
+       <p>Now after its installed go to the folder called /var/wwww/html/ (command 1)</p>
+       <p>COMMAND 1. cd /var/www/html/</p>
+      <b>Step 3:</b>
+        <p>Now use command 1 to download the files from the github repsoitory <a href="https://github.com/CodeTestGroup/opensource-tools">https://github.com/CodeTestGroup/opensource-tools</a></p>
+        <p>COMMAND 1. git clone https://github.com/codetestgroup/opensource-tools</p>
+      <b>Step 4:</b>
+        <p>Now go back to /var/wwww/html/ and open the file called "index.html" (command 1) and remove all the contents of it and put this text into it:</p>
+          <p>TEXT: &lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="refresh" content="0; url=opensource-tools/index.html"&gt;&lt;title&gt;Redirecting...&lt;/title&gt; &lt;/head&gt;&lt;body&gt; &lt;p&gt;If you are not redirected automatically, &lt;a href="opensource-tools/index.html"&gt;click here&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt; &lt;/html&gt;</p>
+          <p>COMMAND 1: cd /var/www/html</p>
+      <b>Step 5:</b>
+        <p>Now start Apache 2 and run it:</p>
+      <b>Step 6:</b>
+        <p>Now run the command " ip a " on the terminal and find your IP address (eg. 192.168.1.124)</p>
+      <b>Step 7:</b>
+        <p>Now get that IP address that you just found and type it into a web browser and if you did it correctly you should see OpenSourceTools!</p>
+</body>
+</html>
