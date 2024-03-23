@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Setup Guides</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OST Server Setup Guides</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://codetestgroup.github.io/opensource-tools-setup">Home</a></li>
+            <li><a href="windowshosts.html">Windows Hosts</a></li>
+            <li><a href="linuxhosts.html">Linux/Raspberry Pi Hosts</a></li>
+            <!-- Add more guide types as needed -->
+        </ul>
+    </nav>
+    <h2>Windows Computers:</h2>
+    <h3>XAMPP instructions:</h3>
+      <b>Step 1:</b>
+        <p>Download and install XAMPP</p>
+      <b>Step 2:</b>
+        <p>Now that you have installed XAMPP you can go to the file path of C:\xampp\htdocs here you will create a folder called "OpenSourceTools" </p>
+      <b>Step 3:</b>
+        <p>Now go to that "OpenSourceTools" folder and download all of the files from the github repsoitory <a href="https://github.com/CodeTestGroup/opensource-tools">https://github.com/CodeTestGroup/opensource-tools</a> and copy the downloaded files into your OpenSourceTools folder.</p>
+      <b>Step 4:</b>
+        <p>Now go back to C:\xampp\htdocs and open the file called index.html with notepad (or any text editing software) and delete everything in it and replace it with this code:</p>
+          <p>&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="refresh" content="0; url=OpenSourceTools/index.html"&gt;&lt;title&gt;Redirecting...&lt;/title&gt; &lt;/head&gt;&lt;body&gt; &lt;p&gt;If you are not redirected automatically, &lt;a href="OpenSourceTools/index.html"&gt;click here&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt; &lt;/html&gt;</p>
+      <b>Step 5:</b>
+        <p>Now open the app called XAMPP CONTROL PANEL and on the line that says "Apache" click the button that says start next to it!</p>
+      <b>Step 6:</b>
+        <p>Now if you have done everything correctly if you open any web browser and type in http://localhost/ and you should be able to go to the page and see the OpenSourceTools website!</p>
+    <h3>Other website server app:</h3>
+      <b>Step 1:</b>
+        <p>Download your chsoen webserver hsot</p>
+      <b>Step 2:</b>
+        <p>Go to the HTML documents folder for your chsoen web hsot app and create a folder called "OpenSourceTools"</p>
+      <b>Step 3:</b>
+        <p>Now go to that "OpenSourceTools" folder and download all of the files from the github repsoitory <a href="https://github.com/CodeTestGroup/opensource-tools">https://github.com/CodeTestGroup/opensource-tools</a> and copy the downloaded files into your OpenSourceTools folder.</p>
+      <b>Step 4:</b>
+        <p>Now go back to your web server hsot app html files folder and create (or edit) the file called index.html with notepad (or any text editing software) and delete everything in it and replace it with this code:</p>
+          <p>&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="refresh" content="0; url=OpenSourceTools/index.html"&gt;&lt;title&gt;Redirecting...&lt;/title&gt; &lt;/head&gt;&lt;body&gt; &lt;p&gt;If you are not redirected automatically, &lt;a href="OpenSourceTools/index.html"&gt;click here&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt; &lt;/html&gt;</p>
+      <b>Step 5:</b>
+        <p>Now start your web server hsot app!</p>
+      <b>Step 6:</b>
+        <p>Now if you have done everything correctly if you open any web browser and type in http://localhost/ and you should be able to go to the page and see the OpenSourceTools website!</p>
+</body>
+</html>
